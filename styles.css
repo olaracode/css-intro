@@ -1,0 +1,89 @@
+/* Importacion de tipografia de google */
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Sofia+Sans+Extra+Condensed&display=swap");
+/* Cascading style sheet - Hoja de estilos en cascada */
+
+/* Clases(.), selectores de etiqueta y id(#) */
+
+/* El asterisco modifica todos los elementos */
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Roboto", sans-serif;
+}
+
+h1,
+h2,
+h3 {
+  text-align: center;
+  font-family: "Sofia Sans Extra Condensed", sans-serif;
+}
+
+.relative-element {
+  position: relative;
+}
+/* Selector de clase se accede por ".nombredeclase" */
+.description {
+  background-color: red;
+  display: block;
+  position: absolute;
+}
+
+.top-right {
+  top: 0px;
+  right: 0px;
+}
+.description,
+.text-white {
+  color: black;
+  font-weight: 700;
+}
+.text-white {
+  color: white;
+}
+
+.container > p {
+  color: red;
+}
+
+.container > div {
+  border: 1px solid black;
+}
+
+/* Selectores de clase se acceden por "#id" */
+/* ID DEBERIA SER USADO PARA JAVASCRIPT Y DEBE SER UNICO */
+#list {
+  background-color: pink;
+}
+
+ol {
+  background-color: blue;
+}
+
+.flex-box {
+  display: flex;
+  /* Flex-direction */
+  flex-direction: column;
+
+  /* Justify content modifica el eje x si es row y si es column modifica el eje y */
+  justify-content: center;
+  align-items: center;
+
+  /* Unidades de medida */
+  /* px: pixel, rem: basado en tamaño de letra, %: tamaño porcentual */
+  /* vh y vw: View Height y view Width */
+  /* Width modifica el ancho */
+  width: 100vw;
+  /* Height  modifica el alto*/
+  height: 80vh;
+  background-color: gray;
+}
+/* .pop-up {
+  position: fixed;
+  top: 50%;
+  height: 100vh;
+  width: 100vh;
+  left: 50%;
+  transform: translate(-50%, -50%);
+} */
